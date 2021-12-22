@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Our <strong>Survey</strong> Form</h1>
+
+      <!-- <section id="hero">
+        <div class="hero container">
+          <div>
+            <h1>Hello, <span></span></h1>
+            <h1>My Name is <span></span></h1>
+            <h1>Hamza <span></span></h1>
+            <a href="#" type="button" class="cta">Portfolio</a>
+          </div>
+        </div>
+      </section> -->
+
+      <p id="description">
+        You want to know more about our coffee? Send us a message.
+      </p>
+      <form id="survey">
+        <label for="survey-form">Name</label>
+        <input
+          type="text"
+          id="survey-form"
+          name="name-label"
+          placeholder="Name"
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email-label"
+          placeholder="Email"
+          pattern="email@example.com"
+        />
+        <label for="number-label">Number</label>
+        <input
+          type="number"
+          id="number-label"
+          name="number-label"
+          min="9"
+          max="15"
+          placeholder="Num"
+          required
+        />
+        <div class="dropdown">
+          <label for="dropdown">Choose a number:</label>
+          <select name="dropdown-label" id="dropdown">
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+        </div>
+
+        <h2>Contact Us</h2>
+        <h3>Choose your method</h3>
+        <div class="radio">
+          <input
+            type="radio"
+            id="radio-name"
+            name="social-media"
+            value="facebook"
+            checked
+          />
+          <label for="facebook">Facebook</label>
+          <input
+            type="radio"
+            id="facebook"
+            name="social-media"
+            value="instagram"
+          />
+          <label for="instagram">Instagram</label>
+          <input
+            type="radio"
+            id="instagram"
+            name="social-media"
+            value="linkedIn"
+          />
+        </div>
+        <br />
+        <br />
+        <h2>coffee Shop</h2>
+        <h3>choose your coffee</h3>
+        <div class="checkbox">
+          <input type="checkbox" id="coffee-es" name="coffee-selection" />
+          <label for="coffee-es">Espresso</label>
+          <input type="checkbox" id="coffee-cap" name="coffee-selection" />
+          <label for="coffee-cap">Cappuccino</label>
+          <input type="checkbox" id="late" name="coffee-selection" />
+          <label for="late">late</label>
+        </div>
+        <div class="last-div">
+          <div class="last-div-1">
+            <h2>Write us something more about your favourite Coffee</h2>
+          </div>
+          <div class="textarea">
+            <textarea  cols="50" rows="20"></textarea>
+          </div>
+        </div>
+        <div><button type="submit">Submit please</button></div>
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>
